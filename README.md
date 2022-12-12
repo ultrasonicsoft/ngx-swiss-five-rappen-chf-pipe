@@ -27,6 +27,8 @@ Values between CHF 1,075 and CHF 1,124 will be rounded to CHF 1,10
 
 ## Installation
 
+NPM package is published at `https://www.npmjs.com/package/ngx-swiss-five-rappen-chf-pipe` 
+
 Run `npm install --save ngx-swiss-five-rappen-chf-pipe` to install package.
 
 ## HTML Usage
