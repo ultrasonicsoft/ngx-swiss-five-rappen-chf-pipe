@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+    line-height: 2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+
+}
+
+p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 50%;
+}
+
+.top-spacer {
+    padding-top: 2rem;
+}

@@ -7,7 +7,8 @@ Author: Balram Chavan (ultrasonicsoft)
 */
 
 @Pipe({
-  name: 'ngxSwissFiveRappenChf'
+  name: 'ngxSwissFiveRappenChf',
+  pure: false
 })
 export class NgxSwissFiveRappenChfPipe implements PipeTransform {
 

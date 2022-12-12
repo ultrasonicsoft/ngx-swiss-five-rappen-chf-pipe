@@ -44,6 +44,112 @@
           }
         }
       }
+    },
+    "ngx-swiss-5-rappen-pipe-example": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/ngx-swiss-5-rappen-pipe-example",
+      "sourceRoot": "projects/ngx-swiss-5-rappen-pipe-example/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ngx-swiss-5-rappen-pipe-example",
+            "index": "projects/ngx-swiss-5-rappen-pipe-example/src/index.html",
+            "main": "projects/ngx-swiss-5-rappen-pipe-example/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/ngx-swiss-5-rappen-pipe-example/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/ngx-swiss-5-rappen-pipe-example/src/favicon.ico",
+              "projects/ngx-swiss-5-rappen-pipe-example/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-swiss-5-rappen-pipe-example/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "ngx-swiss-5-rappen-pipe-example:build:production"
+            },
+            "development": {
+              "browserTarget": "ngx-swiss-5-rappen-pipe-example:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ngx-swiss-5-rappen-pipe-example:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/ngx-swiss-5-rappen-pipe-example/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/ngx-swiss-5-rappen-pipe-example/src/favicon.ico",
+              "projects/ngx-swiss-5-rappen-pipe-example/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-swiss-5-rappen-pipe-example/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-swiss-5-rappen-pipe-example/**/*.ts",
+              "projects/ngx-swiss-5-rappen-pipe-example/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

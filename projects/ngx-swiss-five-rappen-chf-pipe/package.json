@@ -1,6 +1,7 @@
 {
   "name": "ngx-swiss-five-rappen-chf-pipe",
   "version": "1.0.0",
+
   "author": {
     "name": "Balram Chavan",
     "url": "https://github.com/ultrasonicsoft"
@@ -23,9 +24,14 @@
     "Conversion",
     "Correction"
   ],
-  "private": "false",
+  "license": "MIT",
   "repository": {
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/ultrasonicsoft/ngx-swiss-five-rappen-chf-pipe"
+  },
+  "homepage": "https://github.com/ultrasonicsoft/ngx-swiss-five-rappen-chf-pipe",
+  "bugs": {
+    "url": "https://github.com/ultrasonicsoft/ngx-swiss-five-rappen-chf-pipe/issues"
   },
   "peerDependencies": {
     "@angular/common": "^15.0.0",
